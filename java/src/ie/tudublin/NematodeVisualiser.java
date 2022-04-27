@@ -54,7 +54,7 @@ public class NematodeVisualiser extends PApplet
 	 		System.out.println(n);
 	 	}
 	}
-
+	int yTranslate = 200;
 	public void draw() {
 		int n = nematode.size();
 		int currentIndex = index % n;
@@ -66,5 +66,74 @@ public class NematodeVisualiser extends PApplet
 		textAlign(CENTER);
 		String Name = nematode.get(currentIndex).getName();
 		text(Name, 400, 80);
+
+		//circles (hard-coded because time)
+		int Length = nematode.get(currentIndex).getLength();
+		if (Length == 1)
+		{
+			circle(400, 200, 100);
+		}
+		if (Length == 2)
+		{
+			circle(400, 200, 100);
+			circle(400, 300, 100);
+		}
+		if (Length == 3)
+		{
+			circle(400, 200, 100);
+			circle(400, 300, 100);
+			circle(400, 400, 100);
+		}
+
+		if (Length == 4)
+		{
+			circle(400, 200, 100);
+			circle(400, 300, 100);
+			circle(400, 400, 100);
+			circle(400, 500, 100);
+		}
+		if (Length == 5)
+		{
+			circle(400, 200, 100);
+			circle(400, 300, 100);
+			circle(400, 400, 100);
+			circle(400, 500, 100);
+			circle(400, 600, 100);
+		}
+
+		if (Length == 6)
+		{
+			circle(400, 200, 100);
+			circle(400, 300, 100);
+			circle(400, 400, 100);
+			circle(400, 500, 100);
+			circle(400, 600, 100);
+			circle(400, 700, 100);
+		}
+
+		if (Length == 7)
+		{
+			circle(400, 100, 100);
+			circle(400, 200, 100);
+			circle(400, 300, 100);
+			circle(400, 400, 100);
+			circle(400, 500, 100);
+			circle(400, 600, 100);
+			circle(400, 700, 100);
+		if (Length == 8)
+		{
+			circle(400, 100, 100);
+			circle(400, 200, 100);
+			circle(400, 300, 100);
+			circle(400, 400, 100);
+			circle(400, 500, 100);
+			circle(400, 600, 100);
+			circle(400, 700, 100);
+			circle(400, 800, 100);
+		}
+
+
 	}
+
+}
 }
